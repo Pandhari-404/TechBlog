@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+        }
+        .icon-box i {
+            font-size: 2rem;
+        }
+    </style>
+
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Who We Are</h1>
+        <p class="lead text-muted">Delivering trusted insights, expert knowledge, and inspiring stories for modern readers.</p>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="{% url 'home'%}">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="{% url 'about'%}">About</a></li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="fw-bold mb-4 text-center">About Our Blog</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <p class="text-muted">Our blog was created with a simple mission: to provide valuable, well-researched, and engaging content that empowers readers to stay informed and inspired. We believe that knowledge should be accessible, practical, and impactful.</p>
+                <p class="text-muted">Founded by passionate writers and industry professionals, our platform covers diverse topics including technology, business, web development, digital marketing, lifestyle, and education.</p>
+                <p class="text-muted">We focus on quality over quantity. Every article is carefully researched, fact-checked, and written to provide actionable insights that readers can trust.</p>
+                <p class="text-muted">Our goal is not just to share information, but to build a community of curious minds who value growth, innovation, and lifelong learning.</p>
+                <p class="text-muted">Through consistency, integrity, and dedication, we strive to become a trusted source of knowledge in the digital space.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h3 class="fw-bold"><i class="bi bi-bullseye text-primary me-2"></i>Our Mission</h3>
+                <p class="text-muted">To deliver accurate, insightful, and practical content that helps readers make informed decisions, enhance their skills, and stay ahead in an ever-evolving world.</p>
+            </div>
+            <div class="col-md-6">
+                <h3 class="fw-bold"><i class="bi bi-eye text-primary me-2"></i>Our Vision</h3>
+                <p class="text-muted">To become a globally recognized blog platform known for credibility, innovation, and meaningful impact in the digital knowledge ecosystem.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- What We Cover -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">What We Cover</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 text-center p-3">
+                    <i class="bi bi-cpu text-primary mb-3"></i>
+                    <h5 class="fw-bold">Technology</h5>
+                    <p class="text-muted">Latest tech trends, tools, and innovations shaping the future.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 text-center p-3">
+                    <i class="bi bi-briefcase text-primary mb-3"></i>
+                    <h5 class="fw-bold">Business</h5>
+                    <p class="text-muted">Strategies, leadership insights, and market analysis.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 text-center p-3">
+                    <i class="bi bi-code-slash text-primary mb-3"></i>
+                    <h5 class="fw-bold">Web Development</h5>
+                    <p class="text-muted">Modern coding practices, frameworks, and tutorials.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 text-center p-3">
+                    <i class="bi bi-megaphone text-primary mb-3"></i>
+                    <h5 class="fw-bold">Digital Marketing</h5>
+                    <p class="text-muted">SEO, branding, and growth-driven marketing tactics.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 text-center p-3">
+                    <i class="bi bi-heart text-primary mb-3"></i>
+                    <h5 class="fw-bold">Lifestyle</h5>
+                    <p class="text-muted">Wellness, productivity, and personal development topics.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100 text-center p-3">
+                    <i class="bi bi-book text-primary mb-3"></i>
+                    <h5 class="fw-bold">Education</h5>
+                    <p class="text-muted">Learning resources, academic tips, and skill building.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Trust Us -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Why Trust Us</h2>
+        <ul class="list-unstyled text-center">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Research-based and fact-checked content</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Expert contributors and industry professionals</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Regularly updated information</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Reader-focused and value-driven approach</li>
+        </ul>
+    </div>
+</section>
+
+
+
+{% endblock %}

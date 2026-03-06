@@ -1,0 +1,120 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Blog Navbar</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+
+    <!-- Brand -->
+    <a class="navbar-brand fw-bold fs-4" href="#">BlogSpace</a>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse" id="navbarContent">
+
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/article/">Articles</a>
+        </li>
+
+        <!-- Dropdown -->
+
+        
+
+        <li class="nav-item">
+          <a class="nav-link" href="/categories/">Categories</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/about/">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="/contact/">Contact</a>
+        </li>
+
+      </ul>
+
+      <!-- Right Side -->
+      <form class="d-flex me-3" role="search">
+        <input class="form-control form-control-sm me-2 rounded-pill" type="search" placeholder="Search">
+      </form>
+
+      {% comment %} <a href="{% url 'login' %}" class="btn btn-primary btn-sm rounded-pill">Login</a> {% endcomment %}
+
+    </div>
+  </div>
+</nav>
+
+
+
+    {% block content %}
+    
+    {% endblock %}
+
+
+<br>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 mb-3">
+                <h5>About</h5>
+                <p>Your trusted source for quality articles and insights.</p>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5>Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-light text-decoration-none">📍: BlogSpace, Maharashtra, India</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">📧: blogspace@gmail.com</a></li>
+                    <li><a href="#" class="text-light text-decoration-none">📞: +919529233864</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <h5>Follow Us</h5>
+                <a href="#" target="_blank" style="margin: 0 10px; color: #1DA1F2; font-size: 24px;" class="text-light me-3"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" style="margin: 0 10px; color: #1DA1F2; font-size: 24px;" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" target="_blank" style="margin: 0 10px; color: #1DA1F2; font-size: 24px;" class="text-light"><i class="fab fa-linkedin"></i></a>
+            </div>
+
+        </div>
+
+        <hr class="border-secondary">
+        <p class="text-center mb-0">&copy; 2026 BlogSpace. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

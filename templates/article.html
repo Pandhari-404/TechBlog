@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+    <style>
+        .hero-section {
+            background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        }
+        .article-quote {
+            border-left: 4px solid #0d6efd;
+            padding-left: 1rem;
+            font-style: italic;
+            color: #495057;
+        }
+    </style>
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section py-5">
+    <div class="container text-center">
+        <h1 class="display-5 fw-bold">Articles</h1>
+        <p class="text-muted mb-2"><i class="bi bi-person-fill me-1"></i> Pandhari Pawde | <i class="bi bi-calendar-fill me-1"></i> Feb 13, 2026 | <i class="bi bi-tags-fill me-1"></i> Web Design & Devlopment</p>
+        <nav>
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="{% url 'home'%}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item">Articles</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- ================= MAIN CONTENT + SIDEBAR ================= -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <!-- Main Article -->
+            <div class="col-lg-8">
+                <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" class="img-fluid rounded mb-4" alt="Article Image">
+                <h2 class="fw-bold mb-3">Introduction</h2>
+                <p>Welcome to our in-depth exploration of the latest trends and insights shaping the world today. In this article, we break down complex topics into clear, actionable information, helping you stay informed, inspired, and ahead of the curve. Whether you’re a tech enthusiast, professional, or curious reader, this page is your guide to understanding the ideas driving innovation and change</p>
+
+                <h3 class="fw-semibold mt-4 mb-2">Key Features</h3>
+                <ul>
+                    <li>Clean Typography: Use large, readable fonts to reduce eye strain.</li>
+                    <li>Progress Bar: Show readers exactly how far they have left.</li>
+                    <li>Mobile Optimization: Ensure the text scales perfectly on every screen.</li>
+                    <li>Quick Share Buttons: Make it easy to post to social media.</li>
+                </ul>
+
+                <div class="article-quote my-4">
+                    "Covers 2026 tech trends with clear insights, practical takeaways, and a future-focused, human-centric approach."
+                </div>
+
+                <p>This article explores the most important technology trends of 2026, from AI and quantum computing to AR/VR and smart ecosystems. It is structured with clear headings and bullet points for easy reading. Readers gain practical insights and actionable takeaways to stay ahead in a rapidly evolving tech landscape. Ethical considerations, human-centric design, and cybersecurity are also emphasized to ensure responsible technology adoption. Overall, it provides a future-focused, professional guide for tech enthusiasts and professionals alike.</p>
+
+                <!-- Social Share Buttons -->
+                <div class="my-4">
+                    <span class="fw-semibold me-2"></span>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-facebook fs-5"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-twitter fs-5"></i></a>
+                    <a href="#" class="text-dark me-2"><i class="bi bi-linkedin fs-5"></i></a>
+                    <a href="#" class="text-dark"><i class="bi bi-envelope fs-5"></i></a>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4">
+                <!-- Author Card -->
+                <div class="card shadow-sm mb-4 p-4 text-center">
+                    <img src="/static/image-1.jpeg" class="rounded-circle mb-3 mx-auto" width="100" height="100" alt="Author">
+
+                    {% comment %} <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-circle mb-3 mx-auto" width="100" height="100" alt="Author"> {% endcomment %}
+                    <h5 class="fw-bold">Pandhari Pawde</h5>
+                    <p class="text-muted mb-2">Web Designer & Developer</p>
+                    <p>Passionate about modern web design and sharing knowledge with others.</p>
+                    <div>
+                        <a href="#" class="text-dark me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-dark me-2"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+
+                <!-- Recent Articles -->
+                <div class="card shadow-sm mb-4 p-4">
+                    <h5 class="fw-bold mb-3">Recent Articles</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">10 Tips for Responsive Design</li>
+                        <li class="mb-2">Understanding Flexbox in CSS</li>
+                        <li class="mb-2">Top 5 JavaScript Frameworks in 2026</li>
+                    </ul>
+                </div>
+
+                <!-- Categories -->
+                <div class="card shadow-sm p-4">
+                    <h5 class="fw-bold mb-3">Categories</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">Web Design</li>
+                        <li class="mb-2">Frontend Development</li>
+                        <li class="mb-2">Backend Development</li>
+                        <li class="mb-2">Productivity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= RELATED ARTICLES ================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold mb-4 text-center">Related Articles</h2>
+        <div class="row g-4">
+            <div class="col-md-4 d-flex">
+                <div class="card shadow-sm w-100 h-100">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" class="card-img-top" style="height:180px; object-fit:cover;" alt="Article">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">CSS Grid vs Flexbox</h5>
+                        <p class="card-text">Learn the differences and best practices for using CSS Grid and Flexbox in your layouts.</p>
+                        <a href="{% url 'css grid'%}" class="btn btn-outline-primary mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card shadow-sm w-100 h-100">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="card-img-top" style="height:180px; object-fit:cover;" alt="Article">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">JavaScript ES2026 Features</h5>
+                        <p class="card-text">Explore the latest JavaScript features and how to use them effectively in your projects.</p>
+                        <a href="{% url 'javascript features'%}" class="btn btn-outline-primary mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex">
+                <div class="card shadow-sm w-100 h-100">
+                    <img src="https://media.istockphoto.com/id/1157329709/photo/computer-tablet-and-smartphone-gravity-showing-e-magazine-responsive-website.webp?a=1&b=1&s=612x612&w=0&k=20&c=rwuANtZ6ioLNefmWtYHSriNMpnyrKSB-fMu3KVmu4wo=" class="card-img-top" style="height:180px; object-fit:cover;" alt="Article">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Responsive Design Tips</h5>
+                        <p class="card-text">Optimize your websites for mobile, tablet, and desktop devices with responsive design techniques.</p>
+                        <a href="{% url 'responsive desine'%}" class="btn btn-outline-primary mt-auto">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Bootstrap JS Bundle CDN -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Form Validation Script -->
+<script>
+(() => {
+  'use strict'
+  const forms = document.querySelectorAll('.needs-validation')
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+
+
+
+
+{% endblock%}

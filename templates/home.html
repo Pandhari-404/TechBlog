@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+   .hero {
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover no-repeat;
+        color: white;
+        padding: 120px 0;
+    }
+</style>
+
+
+
+<section class="hero text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold">Welcome to My BlogSpace</h1>
+        <p class="lead mt-3">Insights, tutorials, and ideas to help you grow and succeed in your journey.</p>
+        {% comment %} <a href="#" class="btn btn-primary btn-lg mt-4">Read Latest Posts</a> {% endcomment %}
+    </div>
+</section>
+
+
+
+
+<!-- ================= FEATURED POSTS ================= -->
+<section class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Featured Posts</h2>
+        <div class="row g-4">
+            
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="card-img-top" alt="Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Development Tips</h5>
+                        <p class="card-text">Learn modern techniques to build responsive and powerful websites.</p>
+                        <a href="{% url 'web development tips'%}" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1507099985932-87a4520ed1d5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cHJvZHVjdGl2aXR5JTIwaGFja3xlbnwwfHwwfHx8MA%3D%3D" class="card-img-top" alt="Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Productivity Hacks</h5>
+                        <p class="card-text">Boost your daily productivity with simple and effective habits.</p>
+                        <a href="{% url 'productivity hacks'%}" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100  shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334" class="card-img-top" alt="Post Image">
+                    <div class="card-body">
+                        <h5 class="card-title">Tech Trends 2026</h5>
+                        <p class="card-text">Discover the latest trends shaping the future of technology.</p>
+                        <a href="{% url 'tech trends'%}" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= BLOG + SIDEBAR ================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+
+            <!-- Blog Posts -->
+            <div class="col-lg-8">
+                <h2 class="mb-4">Latest Posts</h2>
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">Bootstrap Guide</h5>
+                                <small class="text-muted">Feb 2026</small>
+                                <p class="card-text mt-2">Complete guide to mastering Bootstrap 5 for responsive design.</p>
+                                <a href="{% url 'bootstrap guide'%}" class="btn btn-sm btn-primary">Read More</a>
+                            
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card h-100 shadow-sm">
+                            <img src="https://media.istockphoto.com/id/1067358382/photo/computer-laptop-tablet-and-phone-with-responsive-web-design-website-at-office-mockup.webp?a=1&b=1&s=612x612&w=0&k=20&c=3w_RPahZ5NK-DbFlzAHWkwD9stMh1aW7g1Wy30dxDes=" class="card-img-top">
+                            <div class="card-body">
+                                <h5 class="card-title">UI/UX Principles</h5>
+                                <small class="text-muted">Feb 2026</small>
+                                <p class="card-text mt-2">Understand essential UI/UX principles to improve user experience.</p>
+                                <a href="{% url 'ui ux principles'%}" class="btn btn-sm btn-primary">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-lg-4 mt-5 mt-lg-4">
+                <div class="mb-4">
+                    <h5>Categories</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">Web Development</li>
+                        <li class="list-group-item">Technology</li>
+                        <li class="list-group-item">Productivity</li>
+                        <li class="list-group-item">Design</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h5>Recent Posts</h5>
+                    <ul class="list-group">
+                        <li class="list-group-item">How to Build a Portfolio</li>
+                        <li class="list-group-item">Top Coding Practices</li>
+                        <li class="list-group-item">Best Developer Tools</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= NEWSLETTER ================= -->
+{% comment %} <section class="py-5 text-center">
+    <div class="container">
+        <h2 class="mb-3">Subscribe to Our Newsletter</h2>
+        <p class="mb-4">Get the latest articles delivered straight to your inbox.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <button class="btn btn-primary">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> {% endcomment %}
+
+
+
+
+
+
+
+
+{% endblock %}

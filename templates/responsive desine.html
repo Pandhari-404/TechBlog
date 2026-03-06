@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="bg-light py-5 border-bottom">
+    <div class="container text-center">
+        <h1 class="fw-bold display-5">Responsive Web Design</h1>
+        <p class="text-muted mb-2">By Pandhari Pawde | Feb 13, 2026</p>
+
+        <nav class="mt-3">
+            <ol class="breadcrumb justify-content-center mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'home'%}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item"><a href="{% url 'article'%}" class="text-decoration-none">Articles</a></li>
+                <li class="breadcrumb-item active">Responsive Web Design</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- ================= MAIN CONTENT ================= -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-5">
+
+            <!-- ARTICLE CONTENT -->
+            <div class="col-lg-8">
+
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                     class="img-fluid rounded shadow-sm mb-4" alt="Responsive Web Design">
+
+                <h2 class="fw-bold">Introduction</h2>
+                <p>
+                    Responsive Web Design is a modern web development approach that ensures websites adapt seamlessly
+                    to different screen sizes and devices. In today's multi-device world, building a mobile-friendly
+                    website is essential for user experience and SEO performance.
+                </p>
+
+                <div class="alert alert-info">
+                    Responsive Web Design improves usability, increases engagement, and enhances search engine rankings.
+                </div>
+
+                <h2 class="fw-bold mt-5">Core Principles</h2>
+                <h3 class="fw-semibold mt-3">1. Fluid Layout</h3>
+                <p>
+                    Fluid layouts use percentage-based widths instead of fixed pixels, allowing content to resize
+                    proportionally across screen sizes.
+                </p>
+
+                <h3 class="fw-semibold mt-3">2. Media Queries</h3>
+                <p>
+                    Media Queries enable developers to apply different CSS rules based on device width, height, or orientation.
+                </p>
+
+                <blockquote class="blockquote bg-light p-4 border-start border-4 border-primary my-4">
+                    <p class="mb-0">"Design for flexibility, not for fixed dimensions."</p>
+                </blockquote>
+
+                <h2 class="fw-bold mt-5">Bootstrap Grid System</h2>
+                <p>
+                    Bootstrap’s 12-column grid system allows developers to create flexible and responsive layouts
+                    easily using rows and columns.
+                </p>
+
+                <pre class="bg-light p-3 rounded"><code>
+&lt;div class="row"&gt;
+  &lt;div class="col-12 col-md-6 col-lg-4"&gt;Column 1&lt;/div&gt;
+  &lt;div class="col-12 col-md-6 col-lg-4"&gt;Column 2&lt;/div&gt;
+  &lt;div class="col-12 col-md-12 col-lg-4"&gt;Column 3&lt;/div&gt;
+&lt;/div&gt;
+                </code></pre>
+
+                <h2 class="fw-bold mt-5">Responsive vs Non-Responsive</h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Feature</th>
+                                <th>Responsive</th>
+                                <th>Non-Responsive</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Layout</td>
+                                <td>Fluid and Flexible</td>
+                                <td>Fixed Width</td>
+                            </tr>
+                            <tr>
+                                <td>User Experience</td>
+                                <td>Optimized for all devices</td>
+                                <td>Poor on Mobile</td>
+                            </tr>
+                            <tr>
+                                <td>Maintenance</td>
+                                <td>Single Codebase</td>
+                                <td>Multiple Versions</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h2 class="fw-bold mt-5">Best Practices</h2>
+                <ul>
+                    <li>Use Mobile-First Design strategy.</li>
+                    <li>Optimize images for faster loading.</li>
+                    <li>Test across multiple devices.</li>
+                    <li>Use relative units like %, rem, and em.</li>
+                </ul>
+
+                <!-- Social Share -->
+                <div class="mt-4">
+                    <span class="fw-semibold me-2">Share:</span>
+                    <button class="btn btn-outline-primary btn-sm me-2">Facebook</button>
+                    <button class="btn btn-outline-info btn-sm me-2">Twitter</button>
+                    <button class="btn btn-outline-dark btn-sm">LinkedIn</button>
+                </div>
+
+            </div>
+
+            <!-- SIDEBAR -->
+            <div class="col-lg-4">
+
+                <div class="card shadow-sm mb-4 text-center p-4">
+                    <img src="/static/image-1.jpeg"
+                         class="rounded-circle mx-auto mb-3" width="100" alt="Author">
+                    <h5 class="fw-bold">Pandhari Pawde</h5>
+                    <p class="text-muted">Web Designer & Developer</p>
+                    <p>Passionate about building responsive and modern websites.</p>
+                </div>
+
+                <div class="card shadow-sm mb-4 p-3">
+                    <h5 class="fw-bold mb-3">Recent Posts</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Understanding Flexbox</li>
+                        <li class="list-group-item">CSS Grid vs Bootstrap</li>
+                        <li class="list-group-item">Modern JavaScript Trends</li>
+                    </ul>
+                </div>
+
+                <div class="card shadow-sm p-3">
+                    <h5 class="fw-bold mb-3">Categories</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Web Design</li>
+                        <li class="list-group-item">Frontend</li>
+                        <li class="list-group-item">Backend</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ================= RELATED ARTICLES ================= -->
+{% comment %} <section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-4">Related Articles</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">CSS Grid vs Flexbox</h5>
+                        <p class="card-text">Compare layout systems for modern design.</p>
+                        <button class="btn btn-outline-primary btn-sm">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Mobile-First Strategy</h5>
+                        <p class="card-text">Why mobile-first design improves performance.</p>
+                        <button class="btn btn-outline-primary btn-sm">Read More</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">Bootstrap 5 Guide</h5>
+                        <p class="card-text">Master the Bootstrap Grid System.</p>
+                        <button class="btn btn-outline-primary btn-sm">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> {% endcomment %}
+
+
+
+
+{% endblock%}

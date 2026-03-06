@@ -1,0 +1,236 @@
+{% extends "base.html" %}
+{% block content %}
+
+<style>
+    pre {
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .featured-img {
+        max-height: 400px;
+        object-fit: cover;
+    }
+</style>
+
+<!-- Article Header -->
+<header class="py-5 bg-light">
+    <div class="container text-center">
+        <span class="badge bg-primary mb-3"></span>
+        <h1 class="fw-bold">CSS Grid vs Flexbox</h1>
+        <p class="lead text-muted">
+            A complete guide to understanding the differences, strengths,
+            and ideal use cases of CSS Grid and Flexbox.
+        </p>
+        <p class="text-muted">
+            By <strong>BlogSpace Team</strong> | Published on February 13, 2026
+        </p>
+        <img src="https://media.istockphoto.com/id/976370312/photo/content-marketing-content-data-blogging-media-publication-information-vision-concept.webp?a=1&b=1&s=612x612&w=0&k=20&c=fhaShDVgDzc-bnqn06OytL86ddRdTXd7Ke3VDPuZAws="
+             class="img-fluid rounded shadow-sm mt-4 featured-img w-100"
+             alt="CSS Layout">
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- Article Content -->
+            <article class="col-lg-8">
+
+                <section>
+                    <h2>Introduction</h2>
+                    <p>
+                        Modern CSS provides powerful layout systems that allow developers
+                        to create responsive and dynamic web designs. Two of the most
+                        important layout tools are <strong>Flexbox</strong> and
+                        <strong>CSS Grid</strong>. While both are designed to solve layout
+                        problems, they serve different purposes and excel in different scenarios.
+                    </p>
+
+                    <div class="alert alert-info">
+                        <i class="bi bi-lightbulb"></i>
+                        Tip: Flexbox is best for one-dimensional layouts,
+                        while Grid is designed for two-dimensional layouts.
+                    </div>
+                </section>
+
+                <section>
+                    <h2>What is Flexbox?</h2>
+                    <p>
+                        Flexbox (Flexible Box Layout) is a one-dimensional layout model
+                        designed to align and distribute space among items in a container.
+                    </p>
+
+                    <h3>Flexbox Example</h3>
+                    <pre><code>.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}</code></pre>
+
+                    <p>
+                        Flexbox works great for navigation bars, aligning buttons,
+                        centering elements, and building simple layouts.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>What is CSS Grid?</h2>
+                    <p>
+                        CSS Grid is a two-dimensional layout system that allows you
+                        to create complex grid-based designs with rows and columns.
+                    </p>
+
+                    <h3>Grid Example</h3>
+                    <pre><code>.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}</code></pre>
+
+                    <p>
+                        Grid is ideal for full page layouts, dashboards,
+                        and complex responsive designs.
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Key Differences</h2>
+                    <table class="table table-bordered table-striped">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Feature</th>
+                                <th>Flexbox</th>
+                                <th>CSS Grid</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dimension</td>
+                                <td>One-dimensional</td>
+                                <td>Two-dimensional</td>
+                            </tr>
+                            <tr>
+                                <td>Best For</td>
+                                <td>Components & alignment</td>
+                                <td>Page layouts</td>
+                            </tr>
+                            <tr>
+                                <td>Complex Layouts</td>
+                                <td>Limited</td>
+                                <td>Highly flexible</td>
+                            </tr>
+                            <tr>
+                                <td>Item Placement</td>
+                                <td>Content-driven</td>
+                                <td>Layout-driven</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section>
+                    <h2>When to Use Flexbox</h2>
+                    <ul>
+                        <li>Navigation menus</li>
+                        <li>Centering elements</li>
+                        <li>Aligning items in a row or column</li>
+                        <li>Small UI components</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>When to Use CSS Grid</h2>
+                    <ul>
+                        <li>Full page layouts</li>
+                        <li>Image galleries</li>
+                        <li>Dashboard designs</li>
+                        <li>Complex responsive systems</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Pros and Cons</h2>
+
+                    <h3>Flexbox Pros</h3>
+                    <ul>
+                        <li>Simple and intuitive</li>
+                        <li>Great alignment control</li>
+                        <li>Excellent browser support</li>
+                    </ul>
+
+                    <h3>Flexbox Cons</h3>
+                    <ul>
+                        <li>Limited for complex layouts</li>
+                    </ul>
+
+                    <h3>Grid Pros</h3>
+                    <ul>
+                        <li>Handles complex layouts easily</li>
+                        <li>Precise placement control</li>
+                        <li>Supports overlapping elements</li>
+                    </ul>
+
+                    <h3>Grid Cons</h3>
+                    <ul>
+                        <li>Slightly steeper learning curve</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Final Conclusion</h2>
+                    <p>
+                        Both Flexbox and CSS Grid are essential tools in modern web
+                        development. If you are designing UI components or working in
+                        one direction, use Flexbox. If you are building complex layouts
+                        with rows and columns, CSS Grid is the better choice.
+                    </p>
+
+                    <div class="alert alert-success">
+                        <i class="bi bi-check-circle"></i>
+                        Recommendation: Use both together for maximum layout flexibility.
+                    </div>
+                </section>
+
+            </article>
+
+            <!-- Sidebar -->
+            <aside class="col-lg-4">
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5>Search</h5>
+                        <input type="text" class="form-control" placeholder="Search...">
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5>Categories</h5>
+                        <ul class="list-unstyled">
+                            <li>Web Development</li>
+                            <li>Technology</li>
+                            <li>Programming</li>
+                            <li>Design</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mb-4">
+                    <div class="card-body">
+                        <h5>Newsletter</h5>
+                        <input type="email" class="form-control mb-2" placeholder="Enter email">
+                        <button class="btn btn-primary w-100">Subscribe</button>
+                    </div>
+                </div>
+
+            </aside>
+
+        </div>
+    </div>
+</main>
+
+{% endblock %}

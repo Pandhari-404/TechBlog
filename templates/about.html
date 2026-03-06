@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+{% block content %}
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero-section bg-light py-5">
+    <div class="container text-center">
+        <h1 class="display-5 fw-bold">About Us</h1>
+        <p class="lead">Learn more about our mission, vision, and the passion behind MyBlog.</p>
+
+        <!-- Breadcrumb -->
+        <nav>
+            <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="{% url 'home'%}" class="text-decoration-none">Home</a></li>
+                <li class="breadcrumb-item active">About</li>
+            </ol>
+        </nav>
+    </div>
+</section>
+
+<!-- ================= ABOUT INTRO ================= -->
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1492724441997-5dc865305da7"
+                     class="img-fluid rounded shadow-sm"
+                     alt="About Image">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="fw-bold mb-3">Who We Are</h2>
+                <p>MyBlog is a professional platform dedicated to delivering high-quality articles, insights, and resources across multiple domains. Our mission is to educate, inspire, and empower our readers.</p>
+                <p>We believe in consistent learning, innovation, and sharing knowledge that creates real impact.</p>
+                <div class="mt-4">
+                    <a href="{% url 'contact' %}" class="btn btn-primary me-2">Contact Us</a>
+                    <a href="{% url 'readblog' %}" class="btn btn-outline-secondary">Read Blog</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= MISSION & VISION ================= -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Our Mission & Vision</h2>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4 d-flex">
+                <div class="card shadow-sm text-center p-4 w-100 h-100">
+                    <i class="bi bi-lightbulb fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Innovation</h5>
+                    <p>We strive to bring innovative ideas and fresh perspectives to our readers.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex">
+                <div class="card shadow-sm text-center p-4 w-100 h-100">
+                    <i class="bi bi-people fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Community</h5>
+                    <p>Building a strong and supportive community of learners and creators.</p>
+                </div>
+            </div>
+
+            <div class="col-md-4 d-flex">
+                <div class="card shadow-sm text-center p-4 w-100 h-100">
+                    <i class="bi bi-graph-up-arrow fs-1 text-primary mb-3"></i>
+                    <h5 class="fw-bold">Growth</h5>
+                    <p>Helping individuals and businesses grow through knowledge and insights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= TEAM SECTION ================= -->
+<section class="py-5">
+    <div class="container text-center">
+        <h2 class="fw-bold mb-5">Meet the Author</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-4">
+                    <img src="/static/image-1.jpeg"
+                         class="rounded-circle mx-auto mb-3"
+                         width="120" height="120"
+                         alt="Author">
+                    <h5 class="fw-bold">Pandhari Pawde</h5>
+                    <p class="text-muted">Founder & Content Creator</p>
+                    <p>Passionate about technology, productivity, and sharing valuable knowledge with the world.</p>
+                    <div>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-dark me-3"><i class="bi bi-linkedin"></i></a>
+                        <a href="#" class="text-dark"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================= STATS SECTION ================= -->
+<section class="py-5 bg-light text-center">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <i class="bi bi-journal-text fs-1 text-primary"></i>
+                <h3 class="fw-bold mt-2">500+</h3>
+                <p>Articles Published</p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-people-fill fs-1 text-primary"></i>
+                <h3 class="fw-bold mt-2">10K+</h3>
+                <p>Subscribers</p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-globe fs-1 text-primary"></i>
+                <h3 class="fw-bold mt-2">50+</h3>
+                <p>Countries Reached</p>
+            </div>
+            <div class="col-md-3">
+                <i class="bi bi-award fs-1 text-primary"></i>
+                <h3 class="fw-bold mt-2">15+</h3>
+                <p>Awards Won</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}
