@@ -18,7 +18,7 @@ urlpatterns = [
     path('productivity hacks/', render, {'template_name': 'Productivity Hacks.html'}, name='productivity hacks'),
     path('tech trends/', render, {'template_name': 'Tech Trends.html'}, name='tech trends'),
     path('bootstrap-guide/', render, {'template_name': 'bootstrap_guide.html'}, name='bootstrap_guide'),
-    path('ui ux principles/', render, {'template_name': 'UI/UX Principles.html'}, name='ui ux principles'),
+    path('ui-ux-principles/', render, {'template_name': 'UI_UX_Principles.html'}, name='UI_UX_Principles'),
     path('messages/', render, {'template_name': 'messages.html'}, name='messages'),
     path('contact/', views.contact, name='contact'),
 ]
