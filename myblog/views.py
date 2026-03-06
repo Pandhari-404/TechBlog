@@ -10,8 +10,8 @@ from django.contrib import messages
 def render_page(request, template_name):
     return render(request, template_name, {'myblog': []})
 
-def UI_UX_Principles(request):
-    return render(request, "ui_ux_principles.html")
+# def UI_UX_Principles(request):
+#     return render(request, "ui_ux_principles.html")
 
 def contact(request):
     if request.method == "POST":
