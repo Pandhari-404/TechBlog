@@ -20,7 +20,7 @@ urlpatterns = [
     path('bootstrap guide/', render, {'template_name': 'bootstrap guide.html'}, name='bootstrap guide'),
     # path('ui-ux-principles/', views.UI_UX_Principles, name='UI_UX_Principles'),
 
-    path('ui_ux_principles/', render, {'template_name': 'UI_UX_Principles.html'}, name='UI_UX_Principles'),
+    path('ui-ux-principles/', render, {'template_name': 'UI_UX_Principles.html'}, name='UI_UX_Principles'),
     path('messages/', render, {'template_name': 'messages.html'}, name='messages'),
     path('contact/', views.contact, name='contact'),
 ]
