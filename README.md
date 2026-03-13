@@ -5,6 +5,7 @@ Welcome to my **TechBlog** project!
 Welcome to **TechBlog**, a full-stack blog website for sharing tutorials, tips, and articles about **web development, programming, and new technologies**. The site is **responsive**, working smoothly on desktops, tablets, and mobile devices, providing a clean and easy-to-navigate experience for readers.  
 
 Built with **Django and MySQL**, this project helps manage dynamic content efficiently through a **simple admin interface**, allowing easy creation, editing, and organization of posts.
+
 ---
 
 ## 🔧 Technologies Used
